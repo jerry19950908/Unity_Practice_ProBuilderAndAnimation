@@ -9,13 +9,14 @@ public class Coin : MonoBehaviour
     public AudioClip soundcoin;
 
     
+    
     public void Producecoin()
     {
-        coin.SetActive(true);
-
+        
         Instantiate(coin);
-
         aud.PlayOneShot(soundcoin, 1.5f);
+
+       
     }
 
 }
